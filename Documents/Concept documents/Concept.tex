@@ -1,0 +1,335 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{comment}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\begin{document}
+
+\title{YOUR GAME’S TITLE}
+\author{Gerard Nicolas}
+
+\maketitle
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=3.0in]{cover_example}
+% \end{figure}
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=3.0in]{ex1}
+% \end{figure}
+\tableofcontents
+
+\begin{abstract}
+	% Include a graphic if possible, a title (preferably a logo) and your contact information, target platform, target audience, target rating, and expected shipping date.
+
+	% \begin{itemize}
+	%   \item Title
+	%   \item Intended game systems
+	%   \item Target age of players
+	%   \item Intended ESRB rating
+	%   \item Projected ship date.
+	%   \item Game Logos
+	% \end{itemize}
+
+	Encompass \& Understand
+	
+	\begin{itemize}
+		\item Video game type
+	    \item What are we designing for ?
+		\item Goals
+	    \item What are we designing ? Character, props, environments...
+	    \item Creatures, bosses, … Define stuff here
+		\item Adjectives \& nouns
+	\end{itemize}
+
+\end{abstract}
+% \chapter{TITLE PAGE}
+
+
+\chapter{GAME OUTLINE}
+\label{chap:outline}
+	\begin{comment}
+		Page 2 should include a few short paragraphs about the story 
+		(beginning, middle, and ending ... or at least a cliffhanger) 
+		mentioning the setting, the characters, and the conflict. 
+		Gameplay description should give a brief idea of the flow of the game—break it into stages or bullet points if its easier to convey info that way.
+	\end{comment}
+
+	\section*{Game Story Summary}
+		\begin{comment} TIPS
+			if you are going to kill a character, first develop time with it and the player so bonds a created and it means something for it to die
+			- Character classes
+    			- Necromancer - Why/how/what/where
+		\end{comment}
+
+
+	\section*{Game Flow}
+		\begin{comment}
+			How does the player grow as the challenges increase? 
+			How does this tie into the story? 
+			Briefly describe how these systems will work (experience points, money, score, collectibles) and what the player gains as they grow (new abilities, weapons, additional moves, unlockables).
+		\end{comment}
+
+		The game start with the creation of the character. The player can choose between the background of the character and his mission in the new randomly generated world.
+
+		The player then interact with the world through a serie of randomly generated even whose odds are influenced by the players starting background and actions within the game in order to see its quests completed.
+
+		The player win the game if he manage to complete the quest and lose if the quest cannot be completed anymore or upon death.
+
+		The events the player has to engage with simulate a living world, creating threats and opportunities. This system will be very powerful, shaping the world, the character and ultimately the gameplay.
+
+		Examples of such event :
+
+	\begin{itemize}
+	  \item A bandit camp appear near your village. 
+		\begin{itemize}
+		  \item You can decide to take care of it.
+		  \item You can decide to ignore it
+		  \item You can enter in contact with the leader and start a rebellion
+		  \item You can try to recruit them as a mercenary group
+		\end{itemize}
+	  \item You hear rumors of a tomb infested with living dead which allegedly hide a big treasure / artifact / the lair of a powerful necromancer
+	  	\begin{itemize}
+		  \item You can send a search party and explore the tomb to find treasure.
+		  \item You can search for the necromancer to slay him and bring peace to the village
+		  \item You can search for the necromancer to ask him to become your master
+		  \item You can ignore the event but it might grow into something else, evolving, shaping the world.
+		\end{itemize}
+	\end{itemize}
+
+\chapter{CHARACTER}
+	\begin{comment}
+	Who does the player control? What is his/her/its story? What can they do that is unique/special to this game? Can the player do several types of activities? (Driving, shooting, and so on.) Does the player ever change characters? What is the difference in play?
+	Show control mapping highlighting some of the special/unique moves to this product. Include image of SKU’s controller for reference.
+	\end{comment}		
+
+	You can decide which global direction to evolve (seek strenght, knowledge, skill or religious, ...) but not choose. So depending on your pursue and event you accomplish you will be proposed with a couple of choices for evolution. (Seek knowledge and get into library, help some wizards, seek knowledge rewarding quests can lead into becoming all kinds of mage. Seeking strenght and getting enroled in the militia might lead in meeting a paladin that can get you into a holy order and so forth.)
+
+	\section{Character creation}
+	\section{Companions}
+		\subsection*{relationships}
+		relationship -> lead to ability like black mage and knight : magic sword
+
+	\section{Afflictions}
+		mentally unstable
+
+	% \begin{figure}
+	%     \centering
+	%     \includegraphics[width=3.0in]{ex3}
+	% \end{figure}	
+
+\chapter{GAMEPLAY}
+	\begin{comment}
+		What kind of play does the player engage in? What genres are they? (Driving, shooting, platform, and so on.) How is the sequence of play broken up? (Levels? Rounds? Story chapters?) If there are multiple minigames, list them out by name and give short descriptions. If there are specific cool gameplay scenarios, list them. USPs from the concept overview should be included and briefly detailed here. Diagrams are good to illustrate game concepts.
+		What game features are unique and capitalize on the platform’s hardware? (Hard drive, touch screen, multiple screen, memory card, and so on.) Provide examples.
+	\end{comment}
+
+	\section{Main phases}
+
+	\begin{enumerate}
+		\item Gameplay
+	    \item Manage asset
+	    \item Explore/fight
+	    \item Events/Time pass
+	    \begin{itemize}
+	    	\item Time Management each turn (can be influenced ? Time control ?) Event
+	    	\item Asynchronous rounds - small team will begin a new round sooner and get powerful cards earlier.
+	    \end{itemize}
+	\end{enumerate}
+
+	\section{Management gameplay phases}
+
+	\begin{itemize}
+		\item Character
+		\begin{itemize}
+			\item afflictions - condition system
+		\end{itemize}
+		\item Town
+			\begin{itemize}
+				\item Character ``hidden'' properties influenced by events
+				\item evolution of hamlet based on char properties which attract specific people or evolutions and trigger specific opportunities
+			\end{itemize}
+		\item Team management
+	\end{itemize}
+
+	\section[Event system]{Event system\footnote{think about scala project, population sim}}
+
+		\subsection*{List of events}
+		\begin{itemize}
+			\item Mage seeks dark knowledge
+			\begin{itemize}
+				\item call demons $->$ powerful eratic rebellious ally
+				\item study necromancy $->$ eternal servitude
+			\end{itemize}
+
+			\item Bandit camp spawn
+			\begin{itemize}
+				\item raid marchant
+				\item can be made into mercenary
+				\item ally with them to start rebellion
+			\end{itemize}
+
+		\end{itemize}
+
+		\subsection*{Relationships influences}
+    
+    	\begin{itemize}
+    		\item Befriend a group makes other non friend group take actions against you
+    		\item Makes it harder to strike bargain / deals
+    	\end{itemize}
+
+    \section{Combat System}
+
+    	Combat system ? Card based ?
+
+    	\subsection*{Magic}
+
+    		Different magical effect to combine (trail of ice that slows that can be combine with a powerful spike that needs to be channelled first)
+
+    \section{Character Quest}
+
+    	events and decision might alter your goal
+
+    \section{General ideas}
+
+    	 \begin{itemize}
+    	 	\item evolution of char somewhat random
+    	 	\item Point of view ?
+    	 	\begin{itemize}
+    	 		\item  Point of view ? Character ? ``God''?
+    	 		\item Playing multiple character, first you get to choose as a king how to evolve the kingdom, then you play as you character and you get to work with this change. Maybe as a mage you can get a mind control spell ? ...
+    	 	\end{itemize}
+    	 \end{itemize}
+
+\chapter{GAME WORLD}
+	\begin{comment}
+	Where does the gameplay take place? List the environments the player will visit with short descriptions. How do they tie into the story? What mood is being evoked in each world? How are they connected? (Linear or hub-style navigation?) Include a simple flow diagram of how the player would navigate the world.
+	\end{comment}
+
+	\section{Races}
+	\section{Environment}
+		\subsection*{Places}
+		\subsection*{Biome}
+
+	\section{World generation}
+		World randomly generated
+	
+% 	% \begin{figure}
+% 	%     \centering
+% 	%     \includegraphics[width=3.0in]{ex4}
+% 	% \end{figure}
+
+% \chapter{INTERFACE}
+% 	\begin{comment}
+% 		How does the player navigate the shell of the game? What mood is evoked with the interface screens? What music is used? Include a simple flow diagram of how the player will navigate the interface.
+% 	\end{comment}
+
+\chapter{ENEMIES \& BOSSES}
+	\begin{comment}
+		Enemies. If applicable, what kind of enemies does the player face? What kind of cool attacks do they have? Describe the enemy AI. What makes them unique?
+		Bosses. If applicable, what kind of boss characters does the player face? What environments do they appear in? How does the player defeat them? What does the player get for defeating them?
+	\end{comment}
+
+	\section{Monsters}
+
+	\begin{itemize}
+		\item \href{https://en.wikipedia.org/wiki/Wendigo}{Wendigo}
+	\end{itemize}
+
+% 	% \begin{figure}
+% 	%     \centering
+% 	%     \includegraphics[width=3.0in]{ex6}
+% 	% \end{figure}
+
+% \chapter{MECHANICS \& POWER UPS}
+% 	\begin{comment}
+% 		Gameplay mechanics. What unique mechanics are in the game? How do they relate to the player’s actions? How will they be used in the environment?
+% 		Power-ups. If applicable, what kind of power-ups/collectibles can the player collect? What are the benefits of collecting them? Can they be used to buy items, abilities, and so on?
+% 	\end{comment}
+
+
+% 	% \begin{figure}
+% 	%     \centering
+% 	%     \includegraphics[width=3.0in]{ex5}
+% 	% \end{figure}
+
+% \chapter{CUTSCENES \& BONUS MATERIALS}
+% 	\begin{comment}
+% 		How are the cutscenes going to be presented? When do they appear; in between levels? At the beginning and end of the game? What format have they been created in? (CG? Flash? Puppet show?)
+% 		What material will the player be able to unlock? What incentive is there for the player to play again?
+% 		What other games will be your competition upon market release?
+% 	\end{comment}
+
+% 	% \begin{figure}
+% 	%     \centering
+% 	%     \includegraphics[width=3.0in]{ex7}
+% 	% \end{figure}
+
+% \chapter{GAMEPLAY PROGRESSION}
+
+% \begin{itemize}
+%   \item The player starts from ground zero (or level 1) with no skills, gear and abilities.
+%   \item The player has several skills that are presented to them at the beginning of the game but have to be unlocked over time. The gating mechanism can be experience, money or some other factor.
+%   \item The player has several skills, but has no knowledge of how to use them ... yet9.
+%   \item The player has significant power that they can use immediately ... only to lose it after a boss fight or initial confrontation.
+%   \item The player has significant power that they can use immediately ... only to have to “start back at zero” as the game story is structured as a flashback.
+% \end{itemize}
+
+% \chapter{THE BEAT CHART}
+
+	% \begin{figure}
+	%     \centering
+	%     \includegraphics[width=3.0in]{myfigure}
+	%     \caption{Simulation Results}
+	%     \label{simulationfigure}
+	% \end{figure}
+
+\chapter{GAME INSPIRATION}
+
+	\section*{Alundra}
+		\begin{itemize}
+			\item Plateformer
+			\item Story(Upbeat yet dark) / Universe
+		\end{itemize}
+
+	\section*{Medievil}
+		\begin{itemize}
+			\item Universe / Aesthetic
+		\end{itemize}
+
+	\section*{Darkest Dungeon}
+		\begin{itemize}
+			\item Universe / Aesthetic
+			\item Combat system
+			\item Difficulty
+			\item Character management
+
+			% \includegraphics[width=2.0in]{myfigure}
+			% \begin{figure}[h] \includegraphics[width=2.0in]{myfigure} \end{figure}
+		\end{itemize}
+
+	\section*{Might and Magic heroes}
+		\begin{itemize}
+			\item empty
+		\end{itemize}
+
+	\section{Gampleplay elements I want}	
+	\begin{itemize}
+		\item Exploration: dungeon and so on
+		\item RPG element for characters
+		\item Town management or equivalent
+		\item random generation of dungeon
+		\item relationship and “random” event system
+		\item hero management
+	\end{itemize}
+ 	
+
+\end{document}
